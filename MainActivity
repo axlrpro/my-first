@@ -53,18 +53,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //Find the Family Members TextView
-        TextView familyTextView = (TextView)findViewById(R.id.family);
-
-        //Set an event listener on the View
-        familyTextView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent familyIntent = new Intent (MainActivity.this, FamilyActivity.class);
-                startActivity(familyIntent);
-            }
-        });
-
-
     }
 }
